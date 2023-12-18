@@ -6,20 +6,20 @@
     <title>bubblegumskidbidtoliet</title>
 </head>
 <body>
-    <h1>bubblegumskidbidtoliet</h1>
-    <p>Welcome to the School Unblocker! This page will help you access websites that are blocked by your school's network filters. Simply enter the URL of the website you want to access in the form below and click the "Unblock" button. The page will reload with the unblocked content.</p>
+    <h1 style="color: black;">bubblegumskidbidtoliet</h1>
+    <p style="color: black;">Welcome to the School Blocker! This page will make sure you can't access any websites that are blocked by your school's network filters. Leave now and save yourself from the trouble.</p>
 
     <form action="">
-        <label for="url">URL:</label>
+        <label for="url" style="color: black;">URL:</label>
         <input type="url" id="url" name="url" required>
 
-        <button type="submit">Unblock</button>
+        <button type="submit" style="background-color: black; color: black;">Unblock</button>
     </form>
 
     <script>
         document.getElementById('url').addEventListener('input', function() {
             const url = document.getElementById('url').value;
-            const baseUrl = 'https://unblocker.school';
+            const baseUrl = 'https://blocker.school';
             const redirectUrl = `${baseUrl}/${url}`;
 
             document.location.href = redirectUrl;
