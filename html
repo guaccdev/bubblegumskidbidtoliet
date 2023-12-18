@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bubblegumskidbidtoliet</title>
+</head>
+<body>
+    <h1>bubblegumskidbidtoliet</h1>
+    <p>Welcome to the School Unblocker! This page will help you access websites that are blocked by your school's network filters. Simply enter the URL of the website you want to access in the form below and click the "Unblock" button. The page will reload with the unblocked content.</p>
 
+    <form action="">
+        <label for="url">URL:</label>
+        <input type="url" id="url" name="url" required>
+
+        <button type="submit">Unblock</button>
+    </form>
+
+    <script>
+        document.getElementById('url').addEventListener('input', function() {
+            const url = document.getElementById('url').value;
+            const baseUrl = 'https://unblocker.school';
+            const redirectUrl = `${baseUrl}/${url}`;
+
+            document.location.href = redirectUrl;
+        });
+    </script>
+</body>
+</html>
