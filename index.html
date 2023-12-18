@@ -4,16 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bubblegumskidbidtoliet</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        label {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        input {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            font-size: 16px;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <h1 style="color: black;">bubblegumskidbidtoliet</h1>
-    <p style="color: black;">Welcome to the School Blocker! This page will make sure you can't access any websites that are blocked by your school's network filters. Leave now and save yourself from the trouble.</p>
+    <h1>bubblegumskidbidtoliet</h1>
+    <p>Welcome to the School Blocker! This page will make sure you can't access any websites that are blocked by your school's network filters. Enter the URL of the website you want to access below and click the "Block" button. Embrace the darkness!</p>
 
     <form action="">
-        <label for="url" style="color: black;">URL:</label>
+        <label for="url">URL:</label>
         <input type="url" id="url" name="url" required>
 
-        <button type="submit" style="background-color: black; color: black;">Unblock</button>
+        <button type="submit">Block</button>
     </form>
 
     <script>
